@@ -21,12 +21,11 @@ p {
 header {
   background-color: #2d25a0;
 }
-menu {
-  display: flex;
+.navoptions {
+  text-align: center;
+  margin-left: 100px;
 }
 .navbar ul {
-  list-style-type: none;
-
   display: flex;
 }
 .navbar li {
@@ -37,7 +36,8 @@ menu {
 .navbar li a {
   display: block;
   text-decoration: none;
-  font-size: 18px;
+  padding-top: 40px;
+  font-size: 17px;
   color: #fff;
 }
 
@@ -51,15 +51,21 @@ menu {
 }
 .title {
   color: aliceblue;
-  /* width: 50%; */
-  /* margin-left: 80px; */
-
-  padding: 0 20px;
+  width: 50%;
+  margin-left: 80px;
+  padding: 0 200px 0 0;
   line-height: 1;
+}
+.header-title:hover .title-image {
+  transform: rotate(360deg);
+}
+.title-image {
+  transition: transform linear 3s;
 }
 .title-image img {
   width: 556px;
   height: 438px;
+  overflow: hidden;
 }
 
 button {
@@ -291,3 +297,207 @@ main,
 /*----------------------------
    Footer Style End 
 -----------------------------*/
+
+/*************************************
+     Responsive Mobile  Style Start 
+*************************************/
+@media only screen and (max-width: 688px) {
+  /******* Header Response Start *********/
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+    padding: 1%;
+  }
+  .header-text h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .header img {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    grid-row-gap: 15px;
+  }
+
+  .team-title h1 {
+    font-size: 36px;
+    text-align: left;
+    margin-left: 28px;
+  }
+  .team-title p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 28px;
+  }
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    grid-row-gap: 20px;
+    padding-top: 30px;
+  }
+
+  .photo-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+  #Photo-gellery h1 {
+    text-align: left;
+    margin-left: 34px;
+  }
+  #Photo-gellery p {
+    text-align: left;
+    margin-left: 34px;
+  }
+
+  .Highlights {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .Highlights-title {
+    padding: 2px;
+    margin-left: 5px;
+  }
+  .highlights-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .highlights-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .match img {
+    width: 100%;
+  }
+  .highlights img {
+    margin-top: 20px;
+  }
+
+  .footer-item img {
+    width: 120px;
+  }
+  .footer-icon {
+    margin-top: 30px;
+  }
+}
+
+/*************************************
+     Responsive tablet or heigher  Style Start 
+*************************************/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+    padding: 1%;
+  }
+  .header-text h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .header img {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    grid-row-gap: 15px;
+  }
+
+  .team-title h1 {
+    font-size: 36px;
+    text-align: left;
+    margin-left: 28px;
+  }
+  .team-title p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 28px;
+  }
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    grid-row-gap: 20px;
+    padding-top: 30px;
+  }
+
+  .photo-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+  #Photo-gellery h1 {
+    text-align: left;
+    margin-left: 34px;
+  }
+  #Photo-gellery p {
+    text-align: left;
+    margin-left: 34px;
+  }
+
+  .Highlights {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .Highlights-title {
+    padding: 2px;
+    margin-left: 5px;
+  }
+  .highlights-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .highlights-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .match img {
+    width: 100%;
+  }
+  .highlights img {
+    margin-top: 20px;
+  }
+
+  .footer-item img {
+    width: 120px;
+  }
+  .footer-icon {
+    margin-top: 30px;
+  }
+}
