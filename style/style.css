@@ -5,13 +5,16 @@ body {
 h1 {
   font-size: 68px;
 }
- h3 {
-   font-size: 28px;
-   margin: 15px 0;
- }
- p {
-   color: #6C6C6C;
- }
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+p {
+  color: #6c6c6c;
+}
 header {
   background-color: #2d25a0;
 }
@@ -88,7 +91,7 @@ i {
 main {
   display: flex;
   justify-content: center;
-  background-color: rgb(112, 112, 112);
+  background-color: rgb(224, 224, 224);
 }
 .players {
   display: grid;
@@ -105,7 +108,26 @@ main {
   height: 475px;
   background-color: #fff;
   border-radius: 5px;
-  margin: 30px;
+  margin: 20px;
   padding: 15px;
 }
-.
+/* Highlights section */
+
+.Highlights {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(224, 224, 224);
+  padding-top: 100px;
+}
+.Highlights-title {
+  width: 100%;
+  padding-right: 20px;
+  margin-left: 150px;
+  padding-right: 58px;
+}
+
+.Highlights img {
+  width: 567px;
+  height: 427px;
+  margin-right: 150px;
+}
